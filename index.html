@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chirp Twitter Analyzer</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./Assets/Checkmark.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./Assets/Checkmark.svg"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header class="flex">
@@ -33,8 +37,16 @@
           </a>
         </div>
       </nav>
-      <div class="switch">
+      <!-- <div class="switch">
         <img id="darkMode" src="./Assets/dark-mode.png" width="25px" alt="" />
+      </div> -->
+      <div class="switch">
+        <input type="checkbox" name="" id="checkbox" class="checkbox" />
+        <label for="checkbox" class="checkbox-label">
+          <img src="./Assets/light-mode.png" alt="" />
+          <img src="./Assets/dark-mode.png" alt="" />
+          <span class="ball"></span>
+        </label>
       </div>
     </header>
 

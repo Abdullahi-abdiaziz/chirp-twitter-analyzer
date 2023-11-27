@@ -31,18 +31,23 @@ window.onload = updateImage;
 // Update image on window resize
 window.addEventListener("resize", updateImage);
 
+// document.getElementById("darkMode").addEventListener("click", () => {
+//   document.body.classList.toggle("dark");
+//   changeIcon();
+// });
+
 // Dark & Light mode toggle
-document.getElementById("darkMode").addEventListener("click", () => {
-  document.body.classList.toggle("dark");
+const checkbox = document.getElementById('checkbox');
+checkbox.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
   changeIcon();
-});
+})
 
 function changeIcon() {
   if(document.body.classList.contains('dark')) {
-    icon.src = "./Assets/light-mode.png";
     menu.src = "./Assets/light-menu.svg"
   } else {
-    icon.src = "./Assets/dark-mode.png";
     menu.src = "./Assets/dark-menu.svg";
   }
 }
+
