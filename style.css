@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap");
 
 :root {
   --dark-900: rgb(0, 0, 0); /* Header color */
@@ -98,7 +98,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: var(--fs-base);
   font-weight: normal;
   line-height: 1.5;
@@ -201,6 +201,11 @@ header {
   justify-content: center;
 }
 
+.nav__lists li {
+  font-weight: var(--fw-semi-bold);
+  transition: .3s;
+}
+
 .nav__lists li:hover {
   color: var(--white-900);
 }
@@ -212,6 +217,7 @@ header {
   padding: 10px 20px;
   background-color: var(--blue-400);
   border-radius: 0.5rem;
+  font-weight: var(--fw-semi-bold);
 }
 
 .sign-up {
@@ -593,6 +599,10 @@ footer {
       var(--padding-block-20) + var(--padding-block-40) +
         var(--padding-block-40)
     );
+  }
+
+  .logo h3 {
+    font-size: 3rem;
   }
   
   .hero.flex {
